@@ -11,28 +11,26 @@
 .text-shadow { text-shadow: 1px 1px rgba(0, 0, 0, 0.50); }
 
 
-@media (min-width: 992px) {
-	.container, .container-lg, .container-md, .container-sm {
-		max-width: 960px;
-	}
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 @media (min-width: 768px) {
-	.container, .container-md, .container-sm {
-		max-width: 720px;
+	.container {
+		width: 750px;
 	}
 }
-	
-@media (min-width: 576px) {
-	.container, .container-sm {
-		max-width: 540px;
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
 	}
 }
-
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+		
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
 }
