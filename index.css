@@ -11,14 +11,6 @@
 .text-shadow { text-shadow: 1px 1px rgba(0, 0, 0, 0.50); }
 
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 @media (min-width: 992px) {
 	.container, .container-lg, .container-md, .container-sm {
 		max-width: 960px;
@@ -35,4 +27,12 @@
 	.container, .container-sm {
 		max-width: 540px;
 	}
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
