@@ -1,32 +1,32 @@
-.m-0 {
+.bootstrap-wrapper .m-0 {
 	margin: 0 !important;
 }
 
-.mx-auto {
+.bootstrap-wrapper .mx-auto {
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
 
-.p-0 {
+.bootstrap-wrapper .p-0 {
 	padding: 0 !important;
 }
 
-.px-0 {
+.bootstrap-wrapper .px-0 {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
 
-.py-0 {
+.bootstrap-wrapper .py-0 {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 }
 
-.py-4 {
+.bootstrap-wrapper .py-4 {
 	padding-top: 1.5rem!important;
 	padding-bottom: 1.5rem!important;
 }
 
-.py-5 {
+.bootstrap-wrapper .py-5 {
 	padding-top: 3rem!important;
 	padding-bottom: 3rem!important;
 }

@@ -8,31 +8,38 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-.text-left {
+.bootstrap-wrapper .text-left {
 	text-align: left;
 }
-.text-right {
+
+.bootstrap-wrapper .text-right {
 	text-align: right;
 }
-.text-center {
+
+.bootstrap-wrapper .text-center {
 	text-align: center;
 }
-.text-justify {
+
+.bootstrap-wrapper .text-justify {
 	text-align: justify;
 }
-.text-nowrap {
+
+.bootstrap-wrapper .text-nowrap {
 	white-space: nowrap;
 }
-.text-lowercase {
+
+.bootstrap-wrapper .text-lowercase {
 	text-transform: lowercase;
 }
-.text-uppercase {
+
+.bootstrap-wrapper .text-uppercase {
 	text-transform: uppercase;
 }
-.text-capitalize {
+
+.bootstrap-wrapper .text-capitalize {
 	text-transform: capitalize;
 }
 
-.text-shadow {
+.bootstrap-wrapper .text-shadow {
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.50);
 }
