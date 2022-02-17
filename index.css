@@ -1,7 +1,25 @@
-.container {
-	width: calc(100% + 30px);
-	padding-right: 0;
-	padding-left: 0;
-	margin-left: -30px;
-	overflow: hidden;
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 992px) {
+	.container, .container-lg, .container-md, .container-sm {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container, .container-md, .container-sm {
+		max-width: 720px;
+	}
+}
+	
+@media (min-width: 576px) {
+	.container, .container-sm {
+		max-width: 540px;
+	}
 }
