@@ -43,3 +43,8 @@
 .text-bold {
     font-weight: bold;
 }
+
+section {
+    background-image: url('https://images2.imgbox.com/e2/ad/uJaRkVLM_o.jpg');
+    background-size: 20%;
+}
