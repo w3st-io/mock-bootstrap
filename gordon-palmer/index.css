@@ -1,3 +1,8 @@
 @import './explore.css';
 @import './menu.css';
 @import './shop.css';
+
+
+.pb-4 {
+	padding-bottom: 1.5em !important;
+}
