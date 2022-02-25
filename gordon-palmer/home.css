@@ -5,7 +5,7 @@
 .show-inside-text-on-hover .h5,
 .show-inside-text-on-hover .h6
 {
-	display: none;
+	display: none !important;
 }
 
 .show-inside-text-on-hover:hover .h1,
@@ -15,5 +15,5 @@
 .show-inside-text-on-hover:hover .h5,
 .show-inside-text-on-hover:hover .h6
 {
-	display: block;
+	display: block !important;
 }
