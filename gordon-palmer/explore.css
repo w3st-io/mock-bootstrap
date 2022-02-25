@@ -1,0 +1,23 @@
+.explore-drop-btn {
+	margin: 0 13px;
+	background-color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.explore-drop-btn:hover ~ .explore-dropdown-content {
+	display: block;
+}
+
+.explore-dropdown-content {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	width: 100vw;
+	overflow: auto;
+	background-color: white;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .1);
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .1);
+}
