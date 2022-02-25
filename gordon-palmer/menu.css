@@ -1,0 +1,46 @@
+.menu {
+	position: relative;
+	display: inline-block;
+}
+
+.show { display: block !important; }
+
+.text-bold {
+	font-weight: bold !important;
+}
+
+.drop-btn {
+	font-weight: 300;
+	transition: .5s;
+}
+
+.drop-btn:hover {
+	color: black;
+}
+
+.dropdown-content {
+	border-top: solid 1px rgb(230, 230, 230);
+	transition: 1s;
+}
+
+.dropdown-content:hover {
+	display: block;
+}
+
+.dropdown-content .link {
+	display: block;
+	padding: 0px 16px;
+	text-decoration: none;
+	color: black;
+}
+
+.dropdown-content .link-child {
+	display: block;
+	padding: 12px 16px;
+	text-decoration: none;
+	color: black;
+}
+
+.dropdown-content .link-child:hover {
+	background-color: rgb(247, 247, 247);
+}
