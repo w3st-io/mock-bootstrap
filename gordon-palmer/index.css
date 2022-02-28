@@ -18,8 +18,3 @@
 
 /* [TEXT][SPACING] */
 .text-spread { letter-spacing: .5px !important; }
-
-.text-hover-underline {
-	/* Increase this as per requirement */
-	width: fit-content;
-}
