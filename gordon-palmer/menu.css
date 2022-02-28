@@ -44,3 +44,7 @@
 .dropdown-content .link-child:hover {
 	background-color: rgb(247, 247, 247);
 }
+
+.menu-img {
+	width: 100%;
+}
