@@ -23,9 +23,3 @@
 	/* Increase this as per requirement */
 	width: fit-content;
 }
-
-.text-hover-underline:hover {
-	/* Increase this as per requirement */
-	border-bottom-style: solid;
-	border-bottom-width: .5px;
-}
