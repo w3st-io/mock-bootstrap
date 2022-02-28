@@ -1,0 +1,332 @@
+<link rel="stylesheet" href="https://w3st-io.github.io/index.css">
+<link rel="stylesheet" href="https://w3st-io.github.io/gordon-palmer/index.css">
+
+
+<div class="bootstrap-wrapper">
+	<div class="menu">
+		<!-- EXPLORE --------------------------------------------------------------->
+		<!-- explore-drop-btn -->
+		<button
+			class="p-0 drop-btn explore-drop-btn"
+			style="margin: 0 13px;"
+		>Explore</button>
+	
+		<!-- explore-dropdown-content -->
+		<div
+			id="exploreDropdown"
+			class="dropdown-content explore-dropdown-content"
+		>
+			<!-- Container -->
+			<div class="bcontainer">
+				<!-- Row -->
+				<div id="rowExplore" class="row w-100 mw-100 m-0 py-4"></div>
+			</div>
+		</div>
+
+
+		<!-- SHOP --------------------------------------------------------------------->
+		<!-- Shop Button -->
+		<button
+			class="m-0 p-0 drop-btn shop-drop-btn"
+			style="margin-left: 13px !important;"
+		>Shop</button>
+	
+		<!-- Shop Dropdown -->
+		<div
+			id="shopDropdown"
+			class="dropdown-content shop-dropdown-content"
+		>
+			<!-- Container -->
+			<div class="bcontainer">
+				<!-- Row -->
+				<div id="rowShop" class="row w-100 mw-100 m-0 py-4"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Menu -->
+<script>
+	// [INIT] Const //
+	const menu = {
+		explore: [
+			// Inside Gordon Palmer
+			{
+				item: {
+					text: 'About',
+					link: '#',
+				},
+
+				subItems: [
+					{
+						text: 'Artistic Direction',
+						link: '/explore/artistic-direction',
+					},
+					{
+						text: 'The Studio',
+						link: '/explore/studio',
+					},
+					{
+						text: 'The Gallery',
+						link: '/explore/gallery',
+					},
+				]
+			},
+			
+			// Sustainability
+			{
+				item: {
+					text: 'Sustainability',
+					link: '#',
+				},
+
+				subItems: [
+					{
+						text: 'Our Principles',
+						link: '/explore/our-priniciples',
+					},
+				]
+			},
+			
+			// Media
+			{
+				item: {
+					text: 'Media',
+					link: '#',
+				},
+
+				subItems: [
+					{
+						text: 'The Stories',
+						link: '/explore/the-stories',
+					},
+				]
+			},
+		],
+
+		shop: [
+			// Furniture
+			{
+				item: {
+					text: 'Furniture',
+					link: '/product-category/furniture',
+				},
+
+				subItems: [
+					{
+						text: 'Seating',
+						link: '/product-category/furniture/seating',
+					},
+					{
+						text: 'Tables',
+						link: '/product-category/furniture/tables',
+					},
+				]
+			},
+
+			// Lighting
+			{
+				item: {
+					text: 'Lighting',
+					link: '/product-category/lighting',
+				},
+
+				subItems: [
+					{
+						text: 'Ceiling',
+						link: '/product-category/lighting/ceiling',
+					},
+					{
+						text: 'Floor',
+						link: '/product-category/lighting/floor',
+					},
+					{
+						text: 'Wall',
+						link: '/product-category/lighting/wall',
+					},
+					{
+						text: 'Table',
+						link: '/product-category/lighting/table',
+					},
+				]
+			},
+
+			// Decor
+			{
+				item: {
+					text: 'Decor',
+					link: '/product-category/decor',
+				},
+
+				subItems: [
+					{
+						text: 'Art',
+						link: '/product-category/decor/art',
+					},
+					{
+						text: 'Mirrors',
+						link: '/product-category/decor/mirrors',
+					},
+					{
+						text: 'Objects',
+						link: '/product-category/decor/objects',
+					},
+					{
+						text: 'Tabletops',
+						link: '/product-category/decor/tabletops',
+					},
+					{
+						text: 'Throws',
+						link: '/product-category/decor/throws',
+					},
+					{
+						text: 'Vases',
+						link: '/product-category/decor/vases',
+					},
+				]
+			},
+			
+			// Textiles
+			{
+				item: {
+					text: 'Textiles',
+					link: '/product-category/textile',
+				},
+
+				subItems: [
+					{
+						text: 'Fabric',
+						link: '/product-category/textile/fabric',
+					},
+					{
+						text: 'Performance Fabric',
+						link: '/product-category/textile/performance-fabric',
+					},
+					{
+						text: 'Rug',
+						link: '/product-category/textile/rug',
+					},
+				]
+			},
+			
+			// Wall Covering
+			{
+				item: {
+					text: 'Wallcoverings',
+					link: '/product-category/wallcovering',
+				},
+
+				subItems: [
+					{
+						text: 'Handmade',
+						link: '/product-category/wallcovering/handmade',
+					},
+					{
+						text: 'Naturals',
+						link: '/product-category/wallcovering/naturals',
+					},
+					{
+						text: 'Vinyls',
+						link: '/product-category/wallcovering/vinyls',
+					},
+				]
+			},
+		]
+	}
+</script>
+
+<!-- [EXPLORE] Formulate Menu -->
+<script>
+	let explore = `
+		<div class="col-12 pb-4">
+			<h5 class="text-center text-bold text-uppercase text-spread">
+				Inside Gordon Palmer
+			</h5>
+		</div>
+
+		<div class="col-12 col-sm-6 col-md-4 col-lg-2 pb-4">
+			<img
+				src="https://source.unsplash.com/random/300x400/?design"
+				class="mb-3 menu-img"
+			>
+
+			<a href="/explore/artistic-direction" class="">
+				<h6 class="text-bold">Founder Home</h6>
+			</a>
+		</div>
+	`
+
+	menu.explore.forEach(col => {
+		let section = ``
+
+		col.subItems.forEach(i => {
+			section = section + `
+				<!-- link-child -->
+				<a href="${i.link}" class="link-child">
+					<h6 class="m-0">${i.text}</h6>
+				</a>
+			`
+		})
+
+		explore = explore + `
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2 pb-4">
+				<!-- link -->
+				<a href="${col.item.link}" class="link text-uppercase">
+					<h5 class="text-bold">${col.item.text}</h5>
+				</a>
+
+				${section}
+			</div>
+		`
+	})
+
+	document.getElementById('rowExplore').innerHTML = explore;
+</script>
+
+<!-- [SHOP] Formulate Menu -->
+<script>
+	let shop = `
+		<div class="col-12 pb-4">
+			<h5 class="text-center text-bold text-uppercase text-spread">
+				Shop Our Curated Luxuries
+			</h5>
+		</div>
+
+		<div class="col-12 col-sm-6 col-md-4 col-lg-2 pb-4">
+			<img
+				src="https://source.unsplash.com/random/300x400/?design"
+				class="mb-3 menu-img"
+			>
+
+			<a href="/shop">
+				<h6 class="text-bold">Shop Home</h6>
+			</a>
+		</div>
+	`
+
+	menu.shop.forEach(col => {
+		let section = ``
+
+		col.subItems.forEach(i => {
+			section = section + `
+				<!-- link-child -->
+				<a href="${i.link}" class="link-child">
+					<h6 class="m-0">${i.text}</h6>
+				</a>
+			`
+		})
+
+		shop = shop + `
+			<div class="col-12 col-sm-6 col-md-4 col-lg-2 pb-4">
+				<!-- link -->
+				<a href="${col.item.link}" class="link text-uppercase">
+					<h5 class="text-bold">${col.item.text}</h5>
+				</a>
+
+				${section}
+			</div>
+		`
+	})
+
+	document.getElementById('rowShop').innerHTML = shop;
+</script>
